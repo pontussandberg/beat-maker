@@ -42,9 +42,13 @@ let closedCymbal = new Audio('./sfx/closed-cymbal.wav')
 let currentCell = 0;
 let interval;
 let isRunning = false;
+let cellColor = '#007bff';
+
+
 
 function beatLoop() {
     reset();
+    // trigger sound on the targeted cells
     base();
     cymbal();
 
@@ -72,10 +76,11 @@ function cymbal() {
 }
 
 function reset() {
-    baseArr.forEach(obj => { obj.elem.style.filter = 'none'; });
-    cymbalArr.forEach(obj => { obj.elem.style.filter = 'none' });
+    baseArr.forEach(obj => { obj.elem.style.filter = 'opacity(100%)'; });
+    cymbalArr.forEach(obj => { obj.elem.style.filter = 'opacity(100%)' });
 }
 
+// toggle cells on click
 function toggleSound(elemID) {
     if (elemID.includes('base')) {
         baseArr.forEach(obj => {
@@ -86,7 +91,7 @@ function toggleSound(elemID) {
                 }
                 else {
                     obj.sound = true;
-                    obj.elem.style.background = '#007bff';
+                    obj.elem.style.background = cellColor;
                 }
             }
         });
@@ -100,13 +105,15 @@ function toggleSound(elemID) {
                 }
                 else {
                     obj.sound = true;
-                    obj.elem.style.background = '#007bff';
+                    obj.elem.style.background = cellColor;
                 }
             }
         });
     }
 }
 
+
+// button play/stop toggler
 function togglePlay() {
     if (!isRunning) {
         isRunning = true;

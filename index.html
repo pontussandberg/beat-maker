@@ -21,10 +21,13 @@
                 <div class="img">
                     <div class="cymbal-img"></div>
                 </div>
+                <div class="img">
+                    <div class="piano-img"></div>
+                </div>
             </div>
 
             <div class="beat-container">
-                <div class="base-container">
+                <div class="notes-container">
                     <div onclick="toggleSound(this.id)" id="base1" class="cell"></div>
                     <div onclick="toggleSound(this.id)" id="base2" class="cell"></div>
                     <div onclick="toggleSound(this.id)" id="base3" class="cell"></div>
@@ -33,7 +36,7 @@
                     <div onclick="toggleSound(this.id)" id="base6" class="cell"></div>
                 </div>
 
-                <div class="base-container">
+                <div class="notes-container">
                     <div onclick="toggleSound(this.id)" id="cymbal1" class="cell"></div>
                     <div onclick="toggleSound(this.id)" id="cymbal2" class="cell"></div>
                     <div onclick="toggleSound(this.id)" id="cymbal3" class="cell"></div>
@@ -41,6 +44,16 @@
                     <div onclick="toggleSound(this.id)" id="cymbal5" class="cell"></div>
                     <div onclick="toggleSound(this.id)" id="cymbal6" class="cell"></div>
                 </div>
+
+                <div class="notes-container">
+                    <div onclick="toggleSound(this.id)" id="piano1" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="piano2" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="piano3" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="piano4" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="piano5" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="piano6" class="cell"></div>
+                </div>
+
                 <div class="slider-container">
                     <div class="snail"></div>
                     <input type="range" min="0" max="1000" value="500" class="slider" id="speed">

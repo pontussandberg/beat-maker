@@ -39,7 +39,7 @@ body, html, * {
   background-image: linear-gradient(to bottom left, #302b63, #0f0c29);
 }
 
-.base-container {
+.notes-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,6 +132,13 @@ body, html, * {
   height: 80px;
 }
 
+.piano-img {
+  background-image: url("/img/piano.png");
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+}
+
 .snail {
   background-image: url("/img/snail.png");
   background-size: contain;
@@ -154,52 +161,6 @@ body, html, * {
   .cell {
     height: 40px;
     width: 40px;
-  }
-  .snail {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .rabbit {
-    width: 15px;
-    height: 15px;
-  }
-
-  .slider {
-    margin: 15px 0;
-    height: 7.5px;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    width: 12px;
-    height: 12px;
-  }
-
-  .drum-img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .cymbal-img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .images {
-    left: -60px;
-    top: 25px;
-  }
-
-  .btn{
-    width: 40px;
-    height: 20px;
-    margin-bottom: 5px;
-    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

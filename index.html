@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mess Around</title>
+</head>
+
+<body>
+
+    <section class="landing">
+        <div class="app-container">
+            <button id="button" onclick="togglePlay()" class="btn">Play</button>
+            <div class="images">
+                <div class="img">
+                    <div class="drum-img"></div>
+                </div>
+                <div class="img">
+                    <div class="cymbal-img"></div>
+                </div>
+            </div>
+
+            <div class="beat-container">
+
+                <div class="base-container">
+                    <div onclick="toggleSound(this.id)" id="base1" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="base2" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="base3" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="base4" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="base5" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="base6" class="cell"></div>
+                </div>
+
+                <div class="base-container">
+                    <div onclick="toggleSound(this.id)" id="cymbal1" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="cymbal2" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="cymbal3" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="cymbal4" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="cymbal5" class="cell"></div>
+                    <div onclick="toggleSound(this.id)" id="cymbal6" class="cell"></div>
+                </div>
+                <div class="slider-container">
+                    <div class="snail"></div>
+                    <input type="range" min="0" max="1000" value="500" class="slider" id="speed">
+                    <div class="rabbit"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

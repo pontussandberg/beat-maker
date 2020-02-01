@@ -8,12 +8,16 @@ body, html, * {
 
 .landing {
   height: 100vh;
+  background-image: url('./img/bg.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
 }
 
 .app-container {
   position: absolute;
   left: 20%;
-  top: 30%;
+  top: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,16 +31,11 @@ body, html, * {
   width: 80px;
   height: 40px;
   margin-bottom: 10px;
+  font-size: 16px;
   background-color: #2ea745;
   border: none;
   color: #fff;
-  font-size: 16px;
   font-family: arial;
-}
-
-.landing {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(#302b63), to(#0f0c29));
-  background-image: linear-gradient(to bottom left, #302b63, #0f0c29);
 }
 
 .notes-container {
@@ -119,28 +118,28 @@ body, html, * {
 }
 
 .drum-img {
-  background-image: url("/img/drum.png");
+  background-image: url("./img/drum.png");
   background-size: contain;
   width: 80px;
   height: 80px;
 }
 
 .cymbal-img {
-  background-image: url("/img/cymbal.png");
+  background-image: url("./img/cymbal.png");
   background-size: contain;
   width: 80px;
   height: 80px;
 }
 
 .piano-img {
-  background-image: url("/img/piano.png");
+  background-image: url("./img/piano.png");
   background-size: contain;
   width: 80px;
   height: 80px;
 }
 
 .snail {
-  background-image: url("/img/snail.png");
+  background-image: url("./img/snail.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 40px;
@@ -149,7 +148,7 @@ body, html, * {
 }
 
 .rabbit {
-  background-image: url("/img/rabbit.png");
+  background-image: url("./img/rabbit.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
@@ -162,5 +161,50 @@ body, html, * {
     height: 40px;
     width: 40px;
   }
+  .images {
+    left: -60px;
+    top: 25px;
+  }
+  .drum-img {
+    background-image: url("./img/drum.png");
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+  }
+  .cymbal-img {
+    background-image: url("./img/cymbal.png");
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+  }
+  .piano-img {
+    background-image: url("./img/piano.png");
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+  }
+  .img {
+    width: 40px;
+    height: 40px;
+  }
+  .btn {
+    width: 40px;
+    height: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .slider {
+    margin: 15px 0;
+    height: 7px;
+  }
+  .slider::-webkit-slider-thumb {
+    width: 13px;
+    height: 13px;
+  }
+  .svg {
+    display: none;
+  }
+  .landing{
+    background-color: #1a1923;
+  }
 }
-/*# sourceMappingURL=style.css.map */
